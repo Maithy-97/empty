@@ -1,10 +1,10 @@
-version: 1
-
 # Files to open by default
 tabs:
   - index.html
   - style.css
   - README.md
+  - .cdmrc
+  
 
 # Layout with browser preview
 playground-view: terminal-editor-browser
