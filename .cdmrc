@@ -1,18 +1,23 @@
-# Files to open by default
+# Default files to open when the lab boots
 tabs:
-  - index.html
-  - style.css
-  - README.md
-  - .cdmrc
-  
+  - "index.html"
+  - "style.css"
+  - "README.md"
 
-# Layout with browser preview
+# Show browser preview alongside editor + terminal
 playground-view: terminal-editor-browser
 
-# Start command (static preview-friendly)
-start:
-  command: echo "HTML/CSS lab ready. Open Browser Preview."
+# Customize the Run button to reload the browser
+# Typically for HTML/CSS labs, we just open the page in browser preview,
+# but this ties the button to opening the file in preview.
+run-button: echo "Open the browser preview to see your changes"
 
-# Explicitly tell Fermion which file to preview
-browser:
-  entry: index.html
+# Optional additional terminals (optional)
+# If you want to run any server or commands, specify them here:
+# terminals:
+#   - "echo 'Welcome to the HTML/CSS Lab!'"
+#   - "echo 'You can remove these or add your own commands'"
+
+# Optional: Force browser iframe to open from root
+# (Useful if browser preview needs specific URL)
+browser-link: http://localhost:1337/
