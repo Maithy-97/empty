@@ -1,12 +1,23 @@
-{
-  "name": "Responsive Dashboard Layout",
-  "description": "Starter repository for the Responsive Dashboard HTML/CSS lab. Students will complete all CSS and layout design.",
-  "files": [
-    {
-      "path": "index.html",
-      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Responsive Dashboard</title>\n    <link rel=\"stylesheet\" href=\"style.css\">\n</head>\n<body>\n\n    <!-- Place your code here -->  \n\n</body>\n</html>"
-      "path": "style.css",
-      "content": "/* Base CSS file - Students will write all styling */\nbody {\n    margin: 0;\n    font-family: Arial, sans-serif;\n    background-color: #f4f6f8;\n}"
-    }
-  ]
-}
+# Default files to open when the lab boots
+tabs:
+  - "index.html"
+  - "style.css"
+  - "README.md"
+
+# Show browser preview alongside editor + terminal
+playground-view: terminal-editor-browser
+
+# Customize the Run button to reload the browser
+# Typically for HTML/CSS labs, we just open the page in browser preview,
+# but this ties the button to opening the file in preview.
+run-button: echo "Open the browser preview to see your changes"
+
+# Optional additional terminals (optional)
+# If you want to run any server or commands, specify them here:
+# terminals:
+#   - "echo 'Welcome to the HTML/CSS Lab!'"
+#   - "echo 'You can remove these or add your own commands'"
+
+# Optional: Force browser iframe to open from root
+# (Useful if browser preview needs specific URL)
+# browser-link: http://localhost:1337/
